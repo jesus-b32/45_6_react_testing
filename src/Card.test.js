@@ -5,10 +5,16 @@ import Card from "./Card.js";
 import TEST_IMAGES from "./_testCommon.js";
 
 
-
+// smoke test
 test("remder card without crashing", function() {
     render(<Card/>);
 });
+
+// snapshot test
+test("if snapshot matches", function() {
+    const {asFragment} = render(<Card/>);
+    expect(asFragment()).toMatchSnapshot();
+})
 
 
 
