@@ -12,7 +12,7 @@ exports[`if snapshot matches 1`] = `
       class="Carousel-main"
     >
       <i
-        class="bi bi-arrow-left-circle"
+        class="hidden"
       />
       <div
         class="Card"
